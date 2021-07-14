@@ -1,0 +1,75 @@
+.wrapper{width: 100%; height: auto; _background: plum;}
+
+.top_bar{height:5%; background: #2f3e8b; color: #fff;display: flex; justify-content: center; font-family: 'Libre Franklin', sans-serif; padding: 13px; font-size: 12px;}
+
+/* Header Style Code */
+.header{width: 100%; _height: 20%; font-family: 'PT Serif', sans-serif; padding: 15px;background: #fff;  font-weight: normal;z-index: 9999; }
+/* 헤더에 높이를 지정할시 fixed 정할때 브라우저 기준으로 20% 확대되서 보일수있음 */
+.header .icon_cover{width: 95%; display: flex; font-size: 14px; margin: auto;}
+.icon_cover a i{padding: 0 5px; font-size: 16px; font-weight: normal;}
+.icon_cover a span{padding-right: 30px; color: rgba(0,0,0,0.7);}
+.first_icons{width: 33.33%; display: flex; align-items:center;}
+.logo{width: 33.33%; display: flex; justify-content: center;}
+.second_icons{width: 33.33%;display: flex; justify-content: flex-end; padding: 0 20px; align-items: center;}
+.second_icons i{font-size: 16px;font-weight: normal;}
+
+
+
+
+/* Navigation Style Code */
+.nav{width: 100%; display: flex; padding: 10px 0;}
+.nav ul{width: 100%; display: flex; justify-content: center;align-items: center; color: rgba(0,0,0,0.7);}
+.nav ul li{padding-right: 25px; font-size: 16px; font-weight: normal; }
+.nav ul li a{color: rgba(0,0,0,0.7);}
+
+
+/* Slider Section Style Code */
+.slider{width: 100%; height: 20%;}
+.slider_box{overflow: hidden; height: 100%;}
+.slider .slider_wrap{display: flex; justify-content:center; align-items: center; padding: 30px;height: 100%;}
+.slider .slider_video{ }
+.slider .slider_video source{height: 100%;}
+
+
+/* Products Section Style Code */
+.products{width: 100%; height: 50%; background:silver;}
+.products .product_tit{width: 100%; text-align: center; padding-top: 100px;}
+.products .product_tit h4{font-size: 15px; font-weight: 300;}
+.products .product_tit h2{font-family: 'STIX Two Math', serif; font-size: 30px; font-weight: lighter;}
+
+
+
+
+
+
+
+/* Footer_info Section Style Code */
+.footer_info{width: 100%; height:auto;}
+.footer_info .footer_main{width:100%; height:100%; padding: 30px 0;}
+.footer_info .footer_cover{width: 75%; display: flex; margin: auto;} 
+.footer_info .footer_sub_box{width: 33.33%; height: 100%; display: flex;  padding: 10px 0px;}
+
+.footer_item{width: 20%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.footer_sub_box .footer_item img{width: 40px; height: 40px; margin: 5px 20px;}
+.footer_txt{width:80%; height: 100%;  _padding: 5px 20px;}
+.footer_txt a{text-decoration: underline;}
+.footer_txt p {font-size: 14px; text-align: left;}
+.footer_txt p span{font-size: 16px;font-family: 'PT Serif', serif; font-weight: 400;}
+
+
+
+.company_cover{width: 100%; height: auto; background: #2F3E8B; }
+.company_info{width: 75%; margin: auto; display: flex;padding: 20px 0; font-family: 'Libre Franklin', sans-serif;font-size: 13px; font-weight: normal;}
+#info_box .com_title{padding: 10px 20px; color: #c69967;font-size: 15px;}
+#info_box .com_text{padding: 0 20px; color: #fff;}
+.company_info .info_box1{width: 40%;}
+.company_info .info_box2{width: 20%;}
+.company_info .info_box2 .com_text ul li{line-height: 25px;}
+.company_info .info_box3{width: 40%;}
+.info_box3 .com_email{font-family: 'Libre Franklin', sans-serif;padding-top: 30px;}
+.info_box3 .com_email input{background: #2F3E8B; color: #fff; font-size: 13px;border:none; border-bottom: 1px solid #fff; padding: 8px 50px; margin: 3px;}
+.info_box3 .com_email input::placeholder{color: #ddd;}
+.info_box3 .com_email button{padding: 8px 24px; border: 1px solid #fff; background:#fff;color: #2F3E8B;}
+.info_box3 .com_checkbox{font-size: 6px; display: flex; padding: 5px;}
+.info_box3 .com_checkbox input{margin: 3px;}
+.company_line{margin: auto; background: #2F3E8B; color: #fff; font-size: 12px; text-align: center; padding: 20px 0;}
