@@ -24,7 +24,7 @@
 
 
 /* Slider Section Style Code */
-.slider{width: 100%; height: 20%;}
+.slider{width: 100%; height: 40%;}
 .slider_box{overflow: hidden; height: 100%;}
 .slider .slider_wrap{display: flex; justify-content:center; align-items: center; padding: 30px;height: 100%;}
 .slider .slider_video{ }
@@ -32,15 +32,26 @@
 
 
 /* Products Section Style Code */
-.products{width: 100%; height: 50%; background:silver;}
-.products .product_tit{width: 100%; text-align: center; padding-top: 100px;}
-.products .product_tit h4{font-size: 15px; font-weight: 300;}
-.products .product_tit h2{font-family: 'STIX Two Math', serif; font-size: 30px; font-weight: lighter;}
+.products{width: 100%; height: auto; _background:silver; display: flex;justify-content: center;}
+.product_cover{width: 80%;}
+.product_cover .product_main_tit{text-align: center; padding:100px 0;}
+.product_cover .product_main_tit h4{font-size: 15px; font-weight: 300;}
+.product_cover .product_main_tit h2{font-family: 'STIX Two Math', serif; font-size: 30px; font-weight: lighter;}
 
+.product_cover .product_con{width:100%; display: flex; justify-content: center; align-items: center;}
+.product_cover .product_con .product_box{width: 25%; justify-content: center;text-align: center;padding-bottom: 40px;}
 
+.product_box .product_img{width:100%;}
+/* .product_img img:hover{background: url(/renewal-novella/img/producthover9.jpg);} */
+.product_box .product_img img{width: 100%; height: 100%;}
+/* .product_box .product_img:hover{border:1px solid #c69967;} */
 
-
-
+.product_box .product_tit{width: 100%; color: #0a1d35;font-family: 'STIX Two Math', serif; font-size: 20px;font-weight: 400;}
+.product_tit:hover{color: #386194;}
+.product_box .product_pri{width: 100%; padding: 8px 0;}
+.product_box .product_button{width: 100%;}
+.product_box .product_button button{background:#fff; border: none; color:#2F3E8B; padding: 8px 10px;}
+.product_box .product_button button:hover{border: 1px solid #2F3E8B; font-weight: 500;}
 
 
 /* Footer_info Section Style Code */
@@ -59,7 +70,7 @@
 
 
 .company_cover{width: 100%; height: auto; background: #2F3E8B; }
-.company_info{width: 75%; margin: auto; display: flex;padding: 20px 0; font-family: 'Libre Franklin', sans-serif;font-size: 13px; font-weight: normal;}
+.company_info{width: 75%; margin: auto; display: flex;padding: 40px 0; font-family: 'Libre Franklin', sans-serif;font-size: 13px; font-weight: normal;}
 #info_box .com_title{padding: 10px 20px; color: #c69967;font-size: 15px;}
 #info_box .com_text{padding: 0 20px; color: #fff;}
 .company_info .info_box1{width: 40%;}
@@ -72,4 +83,18 @@
 .info_box3 .com_email button{padding: 8px 24px; border: 1px solid #fff; background:#fff;color: #2F3E8B;}
 .info_box3 .com_checkbox{font-size: 6px; display: flex; padding: 5px;}
 .info_box3 .com_checkbox input{margin: 3px;}
-.company_line{margin: auto; background: #2F3E8B; color: #fff; font-size: 12px; text-align: center; padding: 20px 0;}
+.company_line{width:100%;  padding: 20px 0; background: #2F3E8B;}
+.company_line .company_txt{width:80%; margin: auto; color: #fff; font-size: 12px; text-align: center; border-top: 1px solid #888; padding-top: 5px;  padding-bottom: 20px;}
+
+/* Login Section Style Code */
+.login{width: 100%; height:auto;  _background: paleturquoise;padding-bottom: 50px;}
+.login_cover{width: 35%; _background: palevioletred; margin: auto;}
+.login .login_tit{font-family: 'Nanum Myeongjo', serif; font-size:32px;color:rgb(2, 2, 8); font-weight:200; text-align: center;}
+.login .login_tit p{font-size: 13px; font-family: 'Roboto', sans-serif; font-weight: 500;}
+.login .form_box{display:flex; justify-content: center; align-items: center; padding: 25px;}
+.login .form_box .login_form{padding-left: 10px;}
+.login .form_box .login_form p{padding-bottom: 7px;}
+.login .form_box .login_form input{padding: 5px 12px;}
+.login .form_box .login_form button{padding: 8px 76px; border: 1px solid #2f45b3; background: #2f45b3; color: #fff;}
+.form_box .form_acount{padding: 10px 0;}
+.form_box .form_acount a{text-decoration: underline}

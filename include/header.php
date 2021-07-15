@@ -18,7 +18,7 @@
         </div>
         <div class="second_icons">
           <div class="icon_user">
-            <a href="/renewal-novella/pages/join_form.php"><i class="far fa-user"></i><span>Log in</span></a>
+            <a href="/renewal-novella/pages/login_form.php"><i class="far fa-user"></i><span>Log in</span></a>
           </div>
           <div class="icon_wishlist">
             <a href=""><i class="far fa-heart"></i><span>Wishlist</span></a>
