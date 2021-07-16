@@ -1,4 +1,24 @@
+<?php
 
+  session_start();
+  if(isset($_SESSION['userid'])){
+    $userid = $_SESSION['userid'];
+  } else {
+    $userid = "";
+  }
+
+  // if(isset($_SESSION['userprofile'])){
+  //   $userprofile = $_SESSION['userprofile'];
+  // } else {
+  //   $userprofile = "";
+  // }
+
+  //echo $userid, $userprofile;
+
+?>
+
+
+    <!-- Top bar Section -->
     <div class="top_bar">
       <p>Free Economy Shipping For All EU orders of €150</p>
     </div>
@@ -17,15 +37,28 @@
           <a href="/renewal-novella/index.php"><img src="/renewal-novella/img/logo2.jpg" alt=""></a>
         </div>
         <div class="second_icons">
-          <div class="icon_user">
-            <a href="/renewal-novella/pages/login_form.php"><i class="far fa-user"></i><span>Log in</span></a>
-          </div>
-          <div class="icon_wishlist">
-            <a href=""><i class="far fa-heart"></i><span>Wishlist</span></a>
-          </div>
-          <div class="icon_shopping">
-            <a href=""><i class="fas fa-shopping-bag"></i><span>Cart</span></a>
-          </div>
+
+          <a href=""><i class="far fa-heart"></i><span>Wishlist</span></a>
+          <a href=""><i class="fas fa-shopping-bag"></i><span>Cart</span></a>
+          
+          <?php
+            if(!$userid){
+          ?>
+          <!-- 로그아웃 시 보여질 UI -->
+          <a href="/renewal-novella/pages/login_form.php"><i class="far fa-user"></i><span> Log in</span></a>
+          <?php
+            } else{
+          ?>             
+          <!-- 로그인 시 보여질 UI -->
+          <a href="#"><i class="far fa-user"></i> Hi! <?=$userid?></a> |
+          <a href="/renewal-novella/php/logout.php"> Log out</a>
+          
+
+          <?php
+            }
+          ?>
+
+          
         </div>
       </div>
       <nav class="nav">

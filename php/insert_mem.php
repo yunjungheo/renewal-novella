@@ -22,12 +22,12 @@ include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
   )";
 
   mysqli_query($dbConn, $sql);
-  echo $mem_id, $mem_pass, $mem_name, $mem_email;
-  // echo "
-  //   <script>
-  //     alert('회원가입이 완료되었습니다.');
-  //     location.href='/zay/index.php';
-  //   </script>
-  // ";
+  //echo $mem_id, $mem_pass, $mem_name, $mem_email;
+  echo "
+    <script>
+      alert('회원가입이 완료되었습니다.');
+      location.href='/renewal-novella/index.php';
+    </script>
+  ";
 
 ?>

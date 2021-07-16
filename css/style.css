@@ -11,7 +11,7 @@
 .first_icons{width: 33.33%; display: flex; align-items:center;}
 .logo{width: 33.33%; display: flex; justify-content: center;}
 .second_icons{width: 33.33%;display: flex; justify-content: flex-end; padding: 0 20px; align-items: center;}
-.second_icons i{font-size: 16px;font-weight: normal;}
+.second_icons i{font-size: 16px;font-weight: normal; _padding: 0 5px;}
 
 
 
@@ -87,14 +87,35 @@
 .company_line .company_txt{width:80%; margin: auto; color: #fff; font-size: 12px; text-align: center; border-top: 1px solid #888; padding-top: 5px;  padding-bottom: 20px;}
 
 /* Login Section Style Code */
-.login{width: 100%; height:auto;  _background: paleturquoise;padding-bottom: 50px;}
-.login_cover{width: 35%; _background: palevioletred; margin: auto;}
-.login .login_tit{font-family: 'Nanum Myeongjo', serif; font-size:32px;color:rgb(2, 2, 8); font-weight:200; text-align: center;}
-.login .login_tit p{font-size: 13px; font-family: 'Roboto', sans-serif; font-weight: 500;}
-.login .form_box{display:flex; justify-content: center; align-items: center; padding: 25px;}
-.login .form_box .login_form{padding-left: 10px;}
-.login .form_box .login_form p{padding-bottom: 7px;}
-.login .form_box .login_form input{padding: 5px 12px;}
-.login .form_box .login_form button{padding: 8px 76px; border: 1px solid #2f45b3; background: #2f45b3; color: #fff;}
+.login{width: 100%; height:auto; padding:50px;}
+.login_cover{width: 50%; margin: auto;}
+.login_tit{font-family: 'Nanum Myeongjo', serif; font-size:38px; color:rgb(11, 11, 63); font-weight:200; text-align: center;}
+.login_tit h2{padding-bottom: 35px;}
+
+.form_box{width:100%; display:flex; justify-content: center; align-items: center; padding: 25px;}
+.form_box .login_form{width: 45%;}
+.form_box .login_form .password_p{font-weight: bold;}
+.form_box .login_form p{padding-bottom: 9px; text-align: center; font-size: 13px;}
+.form_box .login_form input{width: 100%; height:100%; padding: 10px; border: 1px solid #ddd;}
+.form_box .login_form input:focus{border: 1px solid #0d153d;}
+.form_box .login_form button{width:100%; padding: 12px 0; border: 1px solid #1d3192; background: #1d3192; color: #fff; justify-content: center;}
 .form_box .form_acount{padding: 10px 0;}
-.form_box .form_acount a{text-decoration: underline}
+.form_box .form_acount a{text-decoration: underline; font-weight: bold;}
+
+
+/* Join Section Style Code */
+
+.join{width: 100%; height:auto; padding:35px;}
+.join_cover{width: 50%; margin: auto;}
+.join_tit{font-family: 'Nanum Myeongjo', serif; font-size:38px; color:rgb(11, 11, 63); font-weight:200; text-align: center;}
+.join_tit h2{padding-bottom: 15px;}
+
+.form_box{width:100%; display:flex; justify-content: center; align-items: center; padding: 25px;}
+.form_box .mem_form{width: 45%;}
+.form_box .mem_form .join_p{font-weight: bold;}
+.form_box .mem_form p{padding-bottom: 9px; text-align: center; font-size: 13px;}
+.form_box .mem_form input{width: 100%; height:100%; padding: 10px; border: 1px solid #ddd;}
+.form_box .mem_form input:focus{border: 1px solid #0d153d;}
+.form_box .mem_form button{width:100%; padding: 12px 0; border: 1px solid #1d3192; background: #1d3192; color: #fff; justify-content: center;}
+.form_box .form_acount{padding: 10px 0;}
+.form_box .form_acount a{text-decoration: underline; font-weight: bold;}

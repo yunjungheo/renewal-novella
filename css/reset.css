@@ -6,6 +6,6 @@ img { display: block; }
 input,button,textarea { outline: 0;} 
 
 /* Main Layout Code */
-body { _font-family: "Roboto", "Noto Sans KR", sans-serif; font-size: 14px; height: 2000px;} 
+body { _font-family: "Roboto", "Noto Sans KR", sans-serif; font-size: 14px; height: auto;} 
 .clearfix:after { content: ""; display: block; clear: both;} 
 /* .center{width: 100%; max-width:1280px; margin: auto; height: auto;} */

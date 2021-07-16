@@ -150,17 +150,7 @@
             </div>
           </div>
         <!-- End of Loop Product Box-->
-
         </div>
-
-
-
-
-
-
-
-
-
       </div>
     </section>
     <!-- End of Product Section Code -->
@@ -168,11 +158,6 @@
     <?php include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/footer.php"; ?>
     
   </div>
-
-
-
-
-
 
 
   <!-- JQuery Framework Load -->

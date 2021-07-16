@@ -42,18 +42,25 @@
      <section class="login">
        <div class="login_cover">
         <div class="login_tit">
-          <h2 >Login</h2>
-          <p>Please enter your e-mail and password</p>
+          <h2>Login</h2>
         </div>
         <div class="form_box">
-            <form action="/renewal-novella/php/insert_mem.php"  method="post" name="mem_form" class="login_form"> 
-              <p><input type="text" name="mem_id" placeholder="Id"></p>
-              <p><input type="password" name="mem_pass" placeholder="Password"></p>
-              <p><input type="text" name="mem_name" placeholder="Name"></p>
-              <p><input type="text" name="mem_email" placeholder="e-mail"></p>
-              <button type="button" id="submit_btn">LOGIN</button>
-              <p class="form_acount">Don't have an account?<a href="/renewal-novella/pages/join_form.php">Create one</a></p>
-              </form>
+            <form action="/renewal-novella/php/login.php"  method="post" name="login_form" class="login_form"> 
+              <p class="password_p">
+                Please enter your id and password
+              </p>
+              <p>
+                <input type="text" name="login_id" placeholder="ID">
+              </p>
+              <p>
+                <input type="password" name="login_pass" autocomplete="off" placeholder="Password" >
+              </p>
+              <button type="button" id="login_btn">LOGIN</button>
+              <p class="form_acount">
+                Don't have an account? 
+                <a href="/renewal-novella/pages/join_form.php">Create one</a>
+              </p>
+           </form>
         </div>
        </div>
       </section>
@@ -64,17 +71,28 @@
 
   <script>
 
-  const submitBtn = document.querySelector("#submit_btn");
+  const loginBtn = document.querySelector("#login_btn");
    
-   submitBtn.addEventListener('click', function(){
-    alert("abc");
+  loginBtn.addEventListener('click', function(){
+      if(!document.login_form.login_id.value){
+        alert('Please enter your ID');
+        document.login_form.login_id.focus();
+        return;
+      }
 
-   });
+      if(!document.login_form.login_pass.value){
+        alert('Please enter your Password');
+        document.login_form.login_pass.focus();
+        return;
+      }
+
+      document.login_form.submit();
+    });
 
   </script>
   
   <!-- JQuery Framework Load -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <script src="/renewal-novella/js/jq.main.js"></script>
 </body>
 </html>
