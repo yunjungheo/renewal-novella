@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 21-07-15 15:19
+-- 생성 시간: 21-07-17 12:25
 -- 서버 버전: 10.4.20-MariaDB
 -- PHP 버전: 8.0.8
 
@@ -32,6 +32,7 @@ CREATE TABLE `nov_pro` (
   `NOV_pro_cate` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '상품 분류',
   `NOV_pro_name` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '상품 이름',
   `NOV_pro_pri` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '상품 가격',
+  `NOV_pro_size` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT '상품 용량',
   `NOV_pro_desc` text CHARACTER SET utf8 NOT NULL COMMENT '상품 설명',
   `NOV_pro_img_01` varchar(50) CHARACTER SET utf8 NOT NULL COMMENT '상품 사진1',
   `NOV_pro_img_02` varchar(50) CHARACTER SET utf8 NOT NULL COMMENT '상품 사진2'

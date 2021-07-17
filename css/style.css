@@ -119,3 +119,13 @@
 .form_box .mem_form button{width:100%; padding: 12px 0; border: 1px solid #1d3192; background: #1d3192; color: #fff; justify-content: center;}
 .form_box .form_acount{padding: 10px 0;}
 .form_box .form_acount a{text-decoration: underline; font-weight: bold;}
+
+
+
+
+/* Store_loaction Style Code */
+.location{width: 100%; height:auto; padding:35px;}
+.location_cover{width: 50%; margin: auto;}
+.location_tit{font-family: 'Nanum Myeongjo', serif; font-size:30px; color:rgb(11, 11, 63); font-weight:200; text-align: center; padding-bottom: 10px;}
+.location_map{width: 100%; height: 100%;}
+.location_map .map{width:100%;}

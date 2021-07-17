@@ -30,7 +30,7 @@
             <a href=""><i class="far fa-search"></i><span>Search</span></a>
           </div>
           <div class="icon_place">
-            <a href=""><i class="fas fa-map-marker-alt"></i><span>Boutiques</span></a>
+            <a href="/renewal-novella/pages/store_location_form.php"><i class="fas fa-map-marker-alt"></i><span>Boutiques</span></a>
           </div>
         </div>
         <div class="logo">
