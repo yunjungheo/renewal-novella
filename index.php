@@ -41,8 +41,10 @@
 <body>
   <div class="wrapper">
     
-  <?php include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/header.php"; ?>
-
+  <?php 
+    include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/header.php"; 
+    include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
+  ?>
     <section class="slider">
       <!-- Loop Slider Box-->
       <div class="slider_box">
@@ -82,74 +84,40 @@
     <section class="products">
       <div class="product_cover">
         <div class="product_main_tit">
-          <h4>NEW EDITION</h4>
-          <h2>FIRENZE 1221</h2>
+          <h4>FIRENZE 1221</h4>
+          <h2>What's New</h2>
         </div>
         <div class="product_con">
-        <!-- Loop Product Box-->
+          
+          <?php 
+            $sql1 = "SELECT * FROM nov_pro ORDER BY NOV_pro_idx DESC";
+            $pro_result = mysqli_query($dbConn, $sql1);
+
+            while($pro_row = mysqli_fetch_array($pro_result)){
+              $pro_row_idx = $pro_row['NOV_pro_idx'];
+              $pro_row_img = $pro_row['NOV_pro_img_01'];
+              $pro_row_tit = $pro_row['NOV_pro_name'];
+              $pro_row_desc = $pro_row['NOV_pro_desc'];
+              $pro_row_pri = $pro_row['NOV_pro_pri'];
+          ?>
+          <!-- Loop Product Box-->
           <div class="product_box">
             <div class="product_img">
-              <img src="/renewal-novella/img/product9.jpg" alt="">
+              <img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt="">
             </div>
             <div class="product_tit">
-              <p>Fresia Eau de Cologne</p>
+              <p><?=$pro_row_tit?></p>
             </div>
             <div class="product_pri">
-             <p>&#8364 110</p>
+             <p>&#8364 <?=$pro_row_pri?></p>
             </div>
             <div class="product_button">
               <button>ADD TO CART</button>
             </div>
           </div>
+          
         <!-- End of Loop Product Box-->
-        <!-- Loop Product Box-->
-        <div class="product_box">
-            <div class="product_img">
-              <img src="/renewal-novella/img/product9.jpg" alt="">
-            </div>
-            <div class="product_tit">
-              <p>Fresia Eau de Cologne</p>
-            </div>
-            <div class="product_pri">
-             <p>A$198.00</p>
-            </div>
-            <div class="product_button">
-              <button><i class="fas fa-shopping-cart"> Add to Cart</i></button>
-            </div>
-          </div>
-        <!-- End of Loop Product Box-->
-        <!-- Loop Product Box-->
-        <div class="product_box">
-            <div class="product_img">
-              <img src="/renewal-novella/img/product9.jpg" alt="">
-            </div>
-            <div class="product_tit">
-              <p>Fresia Eau de Cologne</p>
-            </div>
-            <div class="product_pri">
-             <p>A$198.00</p>
-            </div>
-            <div class="product_button">
-              <button><i class="fas fa-shopping-cart"> Add to Cart</i></button>
-            </div>
-          </div>
-        <!-- End of Loop Product Box-->
-        <!-- Loop Product Box-->
-        <div class="product_box">
-            <div class="product_img">
-              <img src="/renewal-novella/img/product9.jpg" alt="">
-            </div>
-            <div class="product_tit">
-              <p>Fresia Eau de Cologne</p>
-            </div>
-            <div class="product_pri">
-             <p>A$198.00</p>
-            </div>
-            <div class="product_button">
-              <button><i class="fas fa-shopping-cart"> Add to Cart</i></button>
-            </div>
-          </div>
-        <!-- End of Loop Product Box-->
+        <?php } ?>
         </div>
       </div>
     </section>

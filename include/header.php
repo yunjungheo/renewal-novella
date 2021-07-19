@@ -27,7 +27,7 @@
       <div class="icon_cover">
         <div class="first_icons">
           <div class="icon_search">
-            <a href=""><i class="far fa-search"></i><span>Search</span></a>
+            <a href="/renewal-novella/pages/product_insert_form.php"><i class="far fa-search"></i><span>Search</span></a>
           </div>
           <div class="icon_place">
             <a href="/renewal-novella/pages/store_location_form.php"><i class="fas fa-map-marker-alt"></i><span>Boutiques</span></a>
@@ -63,7 +63,7 @@
       </div>
       <nav class="nav">
         <ul>
-         <li> <a href="">Fragrances</a></li>
+         <a href=""><li> Fragrances</li></a>
             <!-- <ul>
               <li><a href="#">Angeli di Firenze</a></li>
               <li><a href="#">Fresia</a></li>
@@ -71,11 +71,11 @@
               <li><a href="#">Rosa</a></li>
               <li><a href="#">Rosa-Novella</a></li>
             </ul> -->
-          <li>Skincare</li>
-          <li>Bodycare</li>
-          <li>At Home</li>
-          <li>By Collection</li>
-          <li>Firenze 1221</li>
+          <a href=""><li>Skincare</li></a>
+          <a href=""><li>Bodycare</li></a>
+          <a href=""><li>At Home</li></a>
+          <a href=""><li>By Collection</li></a>
+          <a href=""><li>Firenze 1221</li></a>
         </ul>
       </nav>     
     </header>
