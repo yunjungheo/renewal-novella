@@ -43,14 +43,14 @@
 
 
   <section class="pro_insert">
-    
+    <div class="pro_cover">
       <form action="/renewal-novella/php/product_insert.php" method="post" class="pro_insert_form"  name="pro_insert_form" enctype="multipart/form-data" >
         <p>
           <select name="pro_select" id="">
-            <option value="fragrances">Fragrances</option>
-            <option value="skincare">Skincare</option>
-            <option value="dodycare">Bodycare</option>
-            <option value="bycollection">By Collection</option>
+            <option value="Fragrances">Fragrances</option>
+            <option value="Skincare">Skincare</option>
+            <option value="Bodycare">Bodycare</option>
+            <option value="At Home">At Home</option>
           </select>
         </p>
         <p>상품이름 : <input type="text" name="pro_insert_name"></p>
@@ -61,7 +61,7 @@
         <p>상품사진2 : <input type="file" name="pro_insert_img2"></p>
         <button type="submit">상품입력</button>
       </form>
-    
+     </div>
   </section>
 
 
@@ -71,7 +71,7 @@
 
 
   <!-- JQuery Framework Load -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="/renewal-novella/js/jq.main.js"></script>
 </body>
 </html>

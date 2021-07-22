@@ -78,14 +78,47 @@
           </div>
         </div> 
       </div>
-    <!-- End of Loop Slider Box-->
-    <!-- Product Section Code-->
     </section>
+    <!-- End of Loop Slider Box-->
+    <!-- Cate Section -->
+    <section class="cate">
+      <div class="cate_cover">
+        <div class="cate_tit">
+          <h2>What's New</h2>
+        </div>
+        <div class="cate_box">
+          <?php
+          $cate_arr = array('Fragrances','Skincare','Bodycare','At Home');
+          
+          for($i = 0; $i < count($cate_arr); $i++){
+            $sql = "SELECT * FROM nov_pro WHERE NOV_pro_cate='{$cate_arr[$i]}'ORDER BY NOV_pro_idx DESC LIMIT 1";
+          $cate_result = mysqli_query($dbConn, $sql);
+          $cate_result_row = mysqli_fetch_array($cate_result);
+
+          $cate_img = $cate_result_row['NOV_pro_img_01'];
+          $cate_tit = $cate_result_row['NOV_pro_cate'];
+          
+          ?>
+          <div class="cate_items">
+            <div class="cate_img">
+              <img src="/renewal-novella/data/product_imgs/<?=$cate_img?>" alt="">
+            </div>
+            <h3><?=$cate_tit?></h3>
+            <button>BUY NOW</button>
+            
+          </div>
+          <?php } ?>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section Code-->
+  
     <section class="products">
       <div class="product_cover">
         <div class="product_main_tit">
-          <h4>FIRENZE 1221</h4>
-          <h2>What's New</h2>
+          <h4>Firenze 1221 Edition</h4>
+          
         </div>
         <div class="product_con">
           
@@ -99,7 +132,7 @@
               $pro_row_tit = $pro_row['NOV_pro_name'];
               $pro_row_desc = $pro_row['NOV_pro_desc'];
               $pro_row_pri = $pro_row['NOV_pro_pri'];
-          ?>
+          ?> 
           <!-- Loop Product Box-->
           <div class="product_box">
             <div class="product_img">
@@ -115,18 +148,18 @@
               <button>ADD TO CART</button>
             </div>
           </div>
-          
+           
         <!-- End of Loop Product Box-->
-        <?php } ?>
+         <?php } ?>
         </div>
       </div>
-    </section>
+    </section> 
     <!-- End of Product Section Code -->
+
+  </div>
 
     <?php include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/footer.php"; ?>
     
-  </div>
-
 
   <!-- JQuery Framework Load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

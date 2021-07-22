@@ -16,7 +16,8 @@ const headerStick = function(){
         $("header").css({
           position:"fixed",
           top:0,
-          width:"100%"
+          width:"100%",
+          background: "#fff"
         });
         $("header").addClass("stick");
       }else{
@@ -48,6 +49,30 @@ const slider = function(){
    }); 
   }
   slider();
+
+
+
+  $(".top_nav, .aco_sub").on("mouseenter", function(){
+    $(".aco_sub").css({display:"block"});
+    $(".aco_sub").stop().animate({height:"135px"}, 300);
+  });
+
+  $(".top_nav, .aco_sub").on("mouseleave", function(){
+    $(".aco_sub").stop().animate({height:0}, 300, function(){ 
+     $(".aco_sub").css({display:"none"});
+
+       
+    });
+  });
+
+
+  $(".top_nav li").on("mouseenter", function(){
+    const i = $(this).index();
+  
+    $(".subnav_box").hide();
+    $(".subnav_box").eq(i).show();
+  });
+
 
 
 

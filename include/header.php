@@ -7,14 +7,6 @@
     $userid = "";
   }
 
-  // if(isset($_SESSION['userprofile'])){
-  //   $userprofile = $_SESSION['userprofile'];
-  // } else {
-  //   $userprofile = "";
-  // }
-
-  //echo $userid, $userprofile;
-
 ?>
 
 
@@ -62,21 +54,56 @@
         </div>
       </div>
       <nav class="nav">
-        <ul>
-         <a href=""><li> Fragrances</li></a>
-            <!-- <ul>
-              <li><a href="#">Angeli di Firenze</a></li>
+        <ul class="top_nav">
+          <li><a href="">Fragrances</a></li> 
+          <li><a href="">Skincare</a> </li>
+          <li><a href="">Bodycare</a></li>
+          <li><a href="">At Home</a></li>
+          <li><a href="">Firenze 1221</a></li>
+       </ul>
+      </nav>  
+      <div class="aco_sub">
+        <div class="line"></div>
+        <div class="sub_cover">
+          <div class="subnav_box box1">
+            <ul>
               <li><a href="#">Fresia</a></li>
               <li><a href="#">Melograno</a></li>
               <li><a href="#">Rosa</a></li>
               <li><a href="#">Rosa-Novella</a></li>
-            </ul> -->
-          <a href=""><li>Skincare</li></a>
-          <a href=""><li>Bodycare</li></a>
-          <a href=""><li>At Home</li></a>
-          <a href=""><li>By Collection</li></a>
-          <a href=""><li>Firenze 1221</li></a>
-        </ul>
-      </nav>     
-    </header>
+            </ul>
+          </div>
+          <div class="subnav_box box2">
+            <ul>
+              <li><a href="#">Idralia Line</a></li>
+              <li><a href="#">Skin Condition</a></li>
+              <li><a href="#">By Category</a></li>
+              <li><a href="#">By Usage</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box3">
+            <ul>
+              <li><a href="#">Body</a></li>
+              <li><a href="#">Hair</a></li>
+              <li><a href="#">Hands & Feet</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box4">
+            <ul>
+              <li><a href="#">Pot Pourri</a></li>
+              <li><a href="#">Diffusers</a></li>
+              <li><a href="#">Waxs & Candles</a></li>
+              <li><a href="#">Spay</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+     </header> 
+           
+           
+        
+        
+        
+  
     <!-- End of header tag code -->
