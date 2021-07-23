@@ -37,6 +37,8 @@
   <link rel="stylesheet" href="/renewal-novella/css/reset.css">
   <!-- Main CSS Code -->
   <link rel="stylesheet" href="/renewal-novella/css/style.css">
+  <!-- Media CSS Code -->
+  <link rel="stylesheet" href="/renewal-novella/css/media.css">
 </head>
 <body>
   <div class="wrapper">
@@ -117,7 +119,7 @@
     <section class="products">
       <div class="product_cover">
         <div class="product_main_tit">
-          <h4>Firenze 1221 Edition</h4>
+          <h4>By Category</h4>
           
         </div>
         <div class="product_con">
@@ -135,6 +137,7 @@
           ?> 
           <!-- Loop Product Box-->
           <div class="product_box">
+            <a href="/renewal-novella/pages/pro_detail_form.php"></a>
             <div class="product_img">
               <img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt="">
             </div>
@@ -152,6 +155,10 @@
         <!-- End of Loop Product Box-->
          <?php } ?>
         </div>
+        <div class="load_more">
+       <button type="button">Load More Product</button>
+       
+     </div>
       </div>
     </section> 
     <!-- End of Product Section Code -->

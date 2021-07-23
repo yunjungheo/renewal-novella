@@ -13,77 +13,63 @@
 .second_icons{width: 33.33%;display: flex; justify-content: flex-end; padding: 0 20px; align-items: center;}
 .second_icons i{font-size: 16px;font-weight: normal; _padding: 0 5px;}
 
-
-
-
 /* Navigation Style Code */
-.nav{width: 100%;}
-.nav .top_nav{width: 100%; display: flex; justify-content: center; align-items: center; color: rgba(0,0,0,0.7);}
+.nav{width: 100%; background:#fff;}
+.nav .top_nav{width: 100%; display: flex; justify-content: center; align-items: center; color: rgba(0,0,0,0.7); position: relative; padding-bottom: 20px;}
 .nav .top_nav>li{padding-right: 25px; font-size: 16px; font-weight: normal; text-align: center;}
 .nav .top_navl>li a{color: rgba(0,0,0,0.7); position: relative; transition: all 0.4s;}
 
+.nav .subnav_box{text-align: center; position: absolute;}
+.nav .subnav_box ul li{padding: 4px 0;}
 
-/* Accordian Nav Style Code */
-.aco_sub{ z-index: 999; background:#fff;}
-/* .aco_sub .line{width: 100%; border-top: 1px solid #b1b1b1; position: absolute; top: 177px;} */
-.aco_sub .sub_cover{display: flex;}
-.aco_sub .sub_cover .subnav_box{text-align: center; position: absolute;}
-.aco_sub .sub_cover .subnav_box ul{}
-.aco_sub .sub_cover .subnav_box ul li{padding: 4px 0;}
-.aco_sub .sub_cover .subnav_box ul li a{}
-.aco_sub .sub_cover .subnav_box.box1{left: 708px;}
-.aco_sub .sub_cover .subnav_box.box2{left: 796px;}
-.aco_sub .sub_cover .subnav_box.box3{left: 888px;}
-.aco_sub .sub_cover .subnav_box.box4{left: 969px;}
-
-
+.nav .subnav_box.box1{left: 708px;}
+.nav .subnav_box.box2{left: 796px;}
+.nav .subnav_box.box3{left: 888px;}
+.nav .subnav_box.box4{left: 969px;}
 
 /* Slider Section Style Code */
 .slider{width: 100%; height: auto;}
-.slider_box{overflow: hidden; height: 100%;}
-.slider_wrap{display: flex; justify-content:center; align-items: center; padding: 30px; height: 100%;}
+.slider_box{overflow: hidden; height: 100%; }
+.slider_wrap{display: flex; justify-content:center; align-items: center; padding-top: 30px; height: 100%;}
 .slider_video{height: 100%;}
 .slider_video source{height: 100%;}
 
-
 /* Categories Section Style Code */
-.cate{width:100%; height:auto; background: #F9F5F0; padding: 100px 0;}
-.cate .cate_cover{padding-bottom: 50px;}
-.cate .cate_cover .cate_tit{text-align: center; padding: 50px 0;}
+.cate{width:100%; height:auto; background: #F9F5F0; padding-bottom: 80px;}
+.cate .cate_cover{}
+.cate .cate_cover .cate_tit{text-align: center; padding: 80px 0 30px 0;}
 .cate .cate_cover .cate_tit h2{font-family: 'STIX Two Math', serif; font-size: 30px; font-weight: lighter; }
 .cate .cate_box{ display: flex;}
 .cate .cate_box .cate_items{width: 25%; display:flex; align-items: center; flex-direction: column;margin: 0 10px; }
-.cate .cate_box .cate_items .cate_img{width:80%; overflow:hidden; border:1px solid #efefef;}
+.cate .cate_box .cate_items .cate_img{width:75%; overflow:hidden; border:1px solid #efefef;}
 .cate .cate_box .cate_items .cate_img img{width:100%;}
 .cate .cate_box .cate_items h3{font-size: 18px; margin: 15px 0; font-family: 'Open Sans', sans-serif; font-weight: 400;}
 .cate .cate_box .cate_items button{background:#fff; border: none; color:#2F3E8B; padding: 8px 10px; border: 1px solid #2F3E8B;}
 .cate .cate_box .cate_items button:hover{background:#2F3E8B; color: #fff; font-weight: 500;}
 
-
-
-
-
 /* Products Section Style Code */
-.products{width: 100%; height: auto; _background:silver; display: flex;justify-content: center;}
+.products{width: 100%; height: auto; display: flex;justify-content: center;}
 .product_cover{width: 100%;}
 .product_cover .product_main_tit{text-align: center; padding:100px 0;}
 .product_cover .product_main_tit h4{font-size: 30px; font-weight: 400; font-family: 'STIX Two Math', serif;}
-/* .product_cover .product_main_tit h2{font-family: 'STIX Two Math', serif; font-size: 30px; font-weight: lighter;} */
-
-.product_cover .product_con{width:100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
-.product_cover .product_con .product_box{width: 25%; justify-content: center;text-align: center;padding-bottom: 40px;}
-
-.product_box .product_img{width:100%;}
-/* .product_img img:hover{background: url(/renewal-novella/img/producthover9.jpg);} */
+.product_cover .product_con{width:80%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: auto;}
+.product_cover .product_con .product_box{width: 33.33%; text-align: center; padding: 0 30px;}
+.product_box .product_img{width:100%; padding: 0 30px;}
 .product_box .product_img img{width: 100%; height: 100%;}
-/* .product_box .product_img:hover{border:1px solid #c69967;} */
-
-.product_box .product_tit{width: 100%; color: #0a1d35;font-family: 'STIX Two Math', serif; font-size: 20px;font-weight: 400;}
+/* .product_box .product_img img:hover{border: 1px solid #c69967;} */
+.product_box .product_tit{width: 100%; color: #0a1d35;font-family: 'STIX Two Math', serif; font-size: 20px; font-weight: 400;}
 .product_tit:hover{color: #386194;}
 .product_box .product_pri{width: 100%; padding: 8px 0;}
 .product_box .product_button{width: 100%;}
 .product_box .product_button button{background:#fff; border: none; color:#2F3E8B; padding: 8px 10px;}
 .product_box .product_button button:hover{border: 1px solid #2F3E8B; font-weight: 500;}
+
+.load_more{justify-content: center; align-items: center; display: flex; padding: 50px 0;}
+.load_more button,
+.load_more a{background: #2F3E8B; border: none; color: #fff; padding: 10px 23px; font-size: 18px; font-family: 'STIX Two Math', serif;}
+.load_more a:hover,
+.load_more button:hover{background: #fff; color: #2F3E8B; border: 1px solid #2F3E8B;}
+
 
 
 /* Footer_info Section Style Code */
@@ -99,11 +85,9 @@
 .footer_txt p {font-size: 14px; text-align: left;}
 .footer_txt p span{font-size: 16px;font-family: 'PT Serif', serif; font-weight: 400;}
 
-
-
 .company_cover{width: 100%; height: auto; background: #2F3E8B; }
 .company_info{width: 75%; margin: auto; display: flex;padding: 40px 0; font-family: 'Libre Franklin', sans-serif;font-size: 13px; font-weight: normal;}
-#info_box .com_title{padding: 10px 20px; color: #c69967;font-size: 15px;}
+#info_box .com_title{padding: 10px 20px; color: #c69967; font-size: 15px;}
 #info_box .com_text{padding: 0 20px; color: #fff;}
 .company_info .info_box1{width: 40%;}
 .company_info .info_box2{width: 20%;}
@@ -136,7 +120,6 @@
 
 
 /* Join Section Style Code */
-
 .join{width: 100%; height:auto; padding:35px;}
 .join_cover{width: 50%; margin: auto;}
 .join_tit{font-family: 'Nanum Myeongjo', serif; font-size:38px; color:rgb(11, 11, 63); font-weight:200; text-align: center;}

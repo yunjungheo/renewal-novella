@@ -52,14 +52,14 @@ const slider = function(){
 
 
 
-  $(".top_nav, .aco_sub").on("mouseenter", function(){
-    $(".aco_sub").css({display:"block"});
-    $(".aco_sub").stop().animate({height:"135px"}, 300);
+  $(".top_nav li, .subnav_box").on("mouseenter", function(){
+    $(".subnav_box").css({display:"block"});
+    $(".subnav_box").stop().animate({height:"135px"}, 300);
   });
 
-  $(".top_nav, .aco_sub").on("mouseleave", function(){
-    $(".aco_sub").stop().animate({height:0}, 300, function(){ 
-     $(".aco_sub").css({display:"none"});
+  $(".top_nav li, .subnav_box").on("mouseleave", function(){
+    $(".subnav_box").stop().animate({height:0}, 300, function(){ 
+     $(".subnav_box").css({display:"none"});
 
        
     });
@@ -74,6 +74,23 @@ const slider = function(){
   });
 
 
+
+
+ const loadMore = function(){
+  $(".product_box").hide();
+  $(".product_box").slice(0, 3).show();
+
+
+  $(".load_more button").click(function(){
+    $(".product_box:hidden").slice(0, 3).show();
+    if ($(".product_box:hidden").length == 0) {
+      $(".load_more").html(`<a href="#">Full View</a>`);
+      
+      
+   }
+  });
+ }
+ loadMore();
 
 
 

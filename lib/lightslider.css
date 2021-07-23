@@ -13,7 +13,8 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+    margin: 50px 0;
   
 }
 .lightSlider:before, .lightSlider:after {

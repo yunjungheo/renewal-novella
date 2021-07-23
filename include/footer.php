@@ -8,7 +8,8 @@
             </div>
             <div class="footer_txt">
               <p><span>Free shipping over €150</span></p>
-              <p>We are pleased to offer free economyshipping to<br> all orders of €150 or more.</p>	
+              <p>We are pleased to offer free economyshipping to</p>
+              <p>all orders of €150 or more.</p>
               <p>Read through all the details by clicking <a href="#">here</a></p>	
             </div>
           </div>

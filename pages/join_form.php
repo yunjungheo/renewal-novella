@@ -35,6 +35,8 @@
   <link rel="stylesheet" href="/renewal-novella/css/reset.css">
   <!-- Main CSS Code -->
   <link rel="stylesheet" href="/renewal-novella/css/style.css">
+   <!-- Media CSS Code -->
+   <link rel="stylesheet" href="/renewal-novella/css/media.css">
 </head>
 <body>
  <div class="wrapper">

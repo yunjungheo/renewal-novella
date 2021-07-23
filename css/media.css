@@ -1,0 +1,27 @@
+@media screen and (max-width:1280px){
+ 
+  
+
+
+
+
+}
+@media screen and (max-width:1050px){
+  .first_icons a span,
+  .second_icons a span{display: none;}
+  .first_icons a,
+  .second_icons a { padding: 0 10px;}
+ 
+
+
+
+
+  
+}
+@media screen and (max-width:850px){
+  
+
+
+
+  
+}
