@@ -52,12 +52,12 @@ const slider = function(){
 
 
 
-  $(".top_nav li, .subnav_box").on("mouseenter", function(){
+  $(".top_nav, .hiden_sub_box").on("mouseenter", function(){
     $(".subnav_box").css({display:"block"});
     $(".subnav_box").stop().animate({height:"135px"}, 300);
   });
 
-  $(".top_nav li, .subnav_box").on("mouseleave", function(){
+  $(".top_nav, .hiden_sub_box").on("mouseleave", function(){
     $(".subnav_box").stop().animate({height:0}, 300, function(){ 
      $(".subnav_box").css({display:"none"});
 

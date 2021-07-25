@@ -61,29 +61,32 @@
           <li><a href="">At Home</a></li>
           <li><a href="">Firenze 1221</a></li>
        </ul>
-       <ul class="subnav_box box1">
-          <li><a href="#">Fresia</a></li>
-          <li><a href="#">Melograno</a></li>
-          <li><a href="#">Rosa</a></li>
-          <li><a href="#">Rosa-Novella</a></li>
-       </ul>
-       <ul class="subnav_box box2">
-          <li><a href="#">Idralia Line</a></li>
-          <li><a href="#">Skin Condition</a></li>
-          <li><a href="#">By Category</a></li>
-          <li><a href="#">By Usage</a></li>
-       </ul>
-       <ul class="subnav_box box3">
-          <li><a href="#">Body</a></li>
-          <li><a href="#">Hair</a></li>
-          <li><a href="#">Hands & Feet</a></li>
-       </ul>
-       <ul class="subnav_box box4">
-          <li><a href="#">Pot Pourri</a></li>
-          <li><a href="#">Diffusers</a></li>
-          <li><a href="#">Waxs & Candles</a></li>
-          <li><a href="#">Spay</a></li>
-       </ul>
+       <div class="hiden_sub_box">
+        <ul class="subnav_box box1">
+            <li><a href="#">Fresia</a></li>
+            <li><a href="#">Melograno</a></li>
+            <li><a href="#">Rosa</a></li>
+            <li><a href="#">Rosa-Novella</a></li>
+        </ul>
+        <ul class="subnav_box box2">
+            <li><a href="#">Idralia Line</a></li>
+            <li><a href="#">Skin Condition</a></li>
+            <li><a href="#">By Category</a></li>
+            <li><a href="#">By Usage</a></li>
+        </ul>
+        <ul class="subnav_box box3">
+            <li><a href="#">Body</a></li>
+            <li><a href="#">Hair</a></li>
+            <li><a href="#">Hands & Feet</a></li>
+        </ul>
+        <ul class="subnav_box box4">
+            <li><a href="#">Pot Pourri</a></li>
+            <li><a href="#">Diffusers</a></li>
+            <li><a href="#">Waxs & Candles</a></li>
+            <li><a href="#">Spay</a></li>
+        </ul>
+       </div>
+      
       </nav>  
 
     

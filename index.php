@@ -137,9 +137,8 @@
           ?> 
           <!-- Loop Product Box-->
           <div class="product_box">
-            <a href="/renewal-novella/pages/pro_detail_form.php"></a>
             <div class="product_img">
-              <img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt="">
+              <a href="/renewal-novella/pages/pro_detail_form.php"><img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt=""></a>
             </div>
             <div class="product_tit">
               <p><?=$pro_row_tit?></p>
