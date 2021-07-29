@@ -248,6 +248,7 @@
 .lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {
     padding-left: 0;
     list-style: none outside none;
+    height:auto!important;
 }
 .lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {
     padding-right: 0;

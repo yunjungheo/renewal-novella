@@ -12,16 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
@@ -29,8 +20,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <!-- Style Frameworks -->
+  
   <!-- Custom Styles -->
   <link rel="icon" type="image/png" sizes="16x16" href="/renewal-novella/img/logofavicon.ico/favicon-32x32.png">
+  <!-- Light Slider Plugin Link -->
+  <link rel="stylesheet" href="/renewal-novella/lib/lightslider.css">
   <!-- reset CSS Code -->
   <link rel="stylesheet" href="/renewal-novella/css/reset.css">
   <!-- Main CSS Code -->
@@ -86,19 +80,19 @@
    
     submitBtn.addEventListener('click', function(){
         if(!document.mem_form.mem_id.value){
-          alert('아이디를 입력해 주세요');
+          alert('Please enter your account.');
           document.mem_form.mem_id.focus();
           return;
         }
 
         if(!document.mem_form.mem_pass.value){
-          alert('비밀번호를 입력해 주세요');
+          alert('Please enter your password.');
           document.mem_form.mem_pass.focus();
           return;
         }
 
         if(!document.mem_form.mem_pass_check.value){
-          alert('비밀번호를 다시 한 번 입력해주세요');
+          alert('Please enter your password again.');
           document.mem_form.mem_pass_check.focus();
           return;
         }
@@ -126,8 +120,13 @@
 
   </script>
   
-  <!-- JQuery Framework Load -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- JQuery Framework Load -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Light Slider -->
+  <script src="/renewal-novella/lib/lightslider.js"></script>
+  <!-- Slider JS -->
+  <script src="/renewal-novella/js/slider.js"></script>
+  <!-- Main Slider JS -->
   <script src="/renewal-novella/js/jq.main.js"></script>
-</body>
+  </body>
 </html>

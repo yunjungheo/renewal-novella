@@ -1,17 +1,19 @@
 .wrapper{width: 100%; height: auto; _background: plum;}
 
-.top_bar{height:5%; background: #2f3e8b; color: #fff;display: flex; justify-content: center; font-family: 'Libre Franklin', sans-serif; padding: 13px; font-size: 12px;}
+.top_bar{_height:auto; background: #2f3e8b; color: #fff;display: flex; justify-content: center; font-family: 'Libre Franklin', sans-serif; padding: 13px; font-size: 12px;}
 
 /* Header Style Code */
-.header{width: 100%; _height: 20%; font-family: 'PT Serif', sans-serif; padding-top: 15px; background: #fff;  font-weight: normal;z-index: 9999; }
+.header{width: 100%; height: auto; font-family: 'PT Serif', sans-serif; padding-top: 15px; background: #fff;  font-weight: normal;z-index: 9999; _position: fixed;}
 /* 헤더에 높이를 지정할시 fixed 정할때 브라우저 기준으로 20% 확대되서 보일수있음 */
 .header .icon_cover{width: 95%; display: flex; font-size: 14px; margin: auto; padding-bottom: 20px;}
 .icon_cover a i{padding: 0 5px; font-size: 16px; font-weight: normal;}
 .icon_cover a span{padding-right: 30px; color: rgba(0,0,0,0.7);}
 .first_icons{width: 33.33%; display: flex; align-items:center;}
 .logo{width: 33.33%; display: flex; justify-content: center;}
-.second_icons{width: 33.33%;display: flex; justify-content: flex-end; padding: 0 20px; align-items: center;}
-.second_icons i{font-size: 16px;font-weight: normal; _padding: 0 5px;}
+.second_icons{width: 25%; display: flex; justify-content: flex-end; _padding: 0 20px; align-items: center;}
+.second_icons a i{font-size: 16px;font-weight: normal; _padding: 0 5px;}
+.second_icons a span{}
+.second_icons .log_out{padding-left: 5px;}
 
 /* Navigation Style Code */
 .nav{width: 100%; background:#fff;}
@@ -29,10 +31,10 @@
 
 /* Slider Section Style Code */
 .slider{width: 100%; height: auto;}
-.slider_box{overflow: hidden; height: 100%; }
-.slider_wrap{display: flex; justify-content:center; align-items: center; padding-top: 30px; height: 100%;}
-.slider_video{height: 100%;}
-.slider_video source{height: 100%;}
+.slider_box{overflow: hidden; }
+.slider_box .slider_wrap{display: flex; justify-content:center; align-items: center; _padding-top: 30px; height: 100%;}
+.slider_box .slider_video{height: 100%; _border: 2px solid red;}
+.slider_box .slider_video source{height: 500px;}
 
 /* Categories Section Style Code */
 .cate{width:100%; height:auto; background: #F9F5F0; padding-bottom: 80px;}
@@ -59,7 +61,7 @@
 /* .product_box .product_img img:hover{border: 1px solid #c69967;} */
 .product_box .product_tit{width: 100%; color: #0a1d35; font-family: 'STIX Two Math', serif; font-size: 20px; font-weight: 400;}
 .product_tit:hover{color: #386194;}
-.product_box .product_pri{width: 100%; padding: 8px 0;}
+.product_box .product_pri{width: 100%; padding: 8px 0; font-size: 18px; font-weight: 400; color: #2F3E8B;}
 .product_box .product_button{width: 100%;}
 .product_box .product_button button{background:#fff; border: none; color:#2F3E8B; padding: 8px 10px;}
 .product_box .product_button button:hover{border: 1px solid #2F3E8B; font-weight: 500;}
@@ -71,28 +73,30 @@
 .load_more button:hover{background: #fff; color: #2F3E8B; border: 1px solid #2F3E8B;}
 
 /* Product detail Page Style Code */
-.pro_detail{_background: paleturquoise; _width: 100%;}
-.detail_contents{_background: palevioletred; width:100%; margin:auto; display: flex; justify-content: space-between;}
+.pro_detail{}
+.detail_contents{width:100%; margin:auto; display: flex; justify-content: space-between;}
 .detail_contents .pro_detail_img_box{display: flex; justify-content: flex-end; width: 80%; align-items: center;}
-.detail_contents .detail_tab_btns{display: flex; padding-top: 10px; flex-direction: column; _background: purple;}
+.detail_contents .detail_tab_btns{display: flex; padding-top: 10px; flex-direction: column;}
 .detail_contents .detail_tab_btns span{width: 100px; height: 100px; border: 1px solid #ccc;  cursor: pointer; overflow: hidden;}
 .detail_contents .detail_tab_btns span img{width: 100%;}
 
-.detail_contents .detail_box{width:50%; padding: 50px; _background: plum;}
+.detail_contents .detail_box{width:50%;}
 .detail_contents .detail_box img{width: 100%;}
 
-.detail_contents .detail_txt{width: calc(60% - 10px); height: auto; _padding: 10px; _background: papayawhip; display: flex; justify-content: center; flex-direction: column;}
-.detail_contents .detail_top{height: 100%; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;}
-.detail_contents .detail_top h2{font-size: 30px; font-family: 'STIX Two Math', serif;}
-.detail_contents .detail_top .tit_box{display: flex; align-items: center;}
-.detail_contents .detail_top .tit_box .size{padding-right: 100px; font-size: 16px; color: #777;}
-.detail_contents .detail_top .tit_box .pri{padding-left: 100px;color: #2F3E8B; font-size: 20px; }
+.detail_contents .detail_txt{width: calc(60% - 10px); height: auto;  display: flex; justify-content: center; flex-direction: column;}
+.detail_contents .detail_top{width:100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+.detail_contents .detail_top h2{font-size: 30px; font-family: 'STIX Two Math', serif; }
+.detail_contents .detail_top p{font-family: 'PT Serif', serif; color: #555;}
+.detail_contents .detail_top .tit_box{display: flex; align-items: center; padding-bottom: 20px;}
+.detail_contents .detail_top .tit_box .size{padding-right: 100px; font-size: 16px; _color: #777;font-family: 'PT Serif', serif;}
+.detail_contents .detail_top .tit_box .pri{padding-left: 100px;color: #2F3E8B; font-size: 20px;}
 
-.detail_contents .detail_wrap .quan_box{display: flex;}
-.detail_contents .detail_wrap .quan{border: 1px solid #ccc; padding:  10px 24px;}
+.detail_contents .detail_wrap .quan_box{display: flex; align-items: center;}
+.detail_contents .detail_wrap .quan{border: 1px solid #ccc; padding:  13px 24px; _font-size: 12px;}
 .detail_contents .detail_wrap .quan b{padding: 0 10px;}
-.detail_contents .detail_wrap .detail_btn{padding-left: 100px;}
-.detail_contents .detail_wrap .detail_btn button{background: #2F3E8B; color: #fff; padding: 10px 24px;} 
+.detail_contents .detail_wrap .quan span{font-size: 17px;}
+.detail_contents .detail_wrap .detail_btn{padding-left: 20px;}
+.detail_contents .detail_wrap .detail_btn button{background: #2F3E8B; color: #fff; padding: 18px 40px; border: 0;} 
 
 
 
@@ -100,7 +104,7 @@
 .footer_info{width: 100%; height:auto;}
 .footer_info .footer_main{width:100%; height:100%; padding: 30px 0;}
 .footer_info .footer_cover{width: 75%; display: flex; margin: auto;} 
-.footer_info .footer_sub_box{width: 33.33%; height: 100%; display: flex;  padding: 10px 0px;}
+.footer_info .footer_sub_box{width: 33.33%; height: 100%; display: flex;  padding: 10px 0px; margin: auto;}
 
 .footer_item{width: 20%;height: 100%;display: flex;justify-content: center;align-items: center;}
 .footer_sub_box .footer_item img{width: 40px; height: 40px; margin: 5px 20px;}
@@ -108,6 +112,12 @@
 .footer_txt a{text-decoration: underline;}
 .footer_txt p {font-size: 14px; text-align: left;}
 .footer_txt p span{font-size: 16px;font-family: 'PT Serif', serif; font-weight: 400;}
+
+
+.footer_info .lSSlideOuter .lSPager.lSpg > li {cursor: pointer; display: inline-block; _padding: 0 3px;  margin: 0 3px;  position: relative;  width: 40px;  height: 3px;  background: red; border: 2px solid red;}
+footer .lSSlideOuter .lSPager.lSpg > li a{background-color: #2F3E8B;
+    _border-radius: 30px;    display: inline-block;    height: 3px;    overflow: hidden;    text-indent: -999em;    width: 40px;    position: absolute;    left: 0;    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;    transition: all 0.5s linear 0s;}
 
 .company_cover{width: 100%; height: auto; background: #2F3E8B; }
 .company_info{width: 75%; margin: auto; display: flex;padding: 40px 0; font-family: 'Libre Franklin', sans-serif;font-size: 13px; font-weight: normal;}
@@ -128,12 +138,12 @@
 
 /* Login Section Style Code */
 .login{width: 100%; height:auto; padding:50px;}
-.login_cover{width: 50%; margin: auto;}
+.login_cover{width: 55%; margin: auto;}
 .login_tit{font-family: 'Nanum Myeongjo', serif; font-size:38px; color:rgb(11, 11, 63); font-weight:200; text-align: center;}
 .login_tit h2{padding-bottom: 35px;}
 
-.form_box{width:100%; display:flex; justify-content: center; align-items: center; padding: 25px;}
-.form_box .login_form{width: 45%;}
+.form_box{width:100%; display:flex; justify-content: center; align-items: center; }
+.form_box .login_form{width: 50%;}
 .form_box .login_form .password_p{font-weight: bold;}
 .form_box .login_form p{padding-bottom: 9px; text-align: center; font-size: 13px;}
 .form_box .login_form input{width: 100%; height:100%; padding: 10px; border: 1px solid #ddd;}

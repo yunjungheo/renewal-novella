@@ -29,27 +29,6 @@ const headerStick = function(){
 
 headerStick();
 
-const slider = function(){
-  //Light Slider Function Code
-  $(".slider").lightSlider({
-     //1.슬라이드 할부분의 전체를 감싸고있는 slider를 선택해준것
-     //2.lightSlider안에 객체화 시켜서 넣어줘야해서 {}사용
-  
-    item: 1,
-    controls: true,
-    prevHtml: '<i class="fa fa-angle-left"></i>',
-    nextHtml: '<i class="fa fa-angle-right"></i>',
-
-    speed:1000,
-    auto: true,
-    loop: true,
-    pause: 9500,  
-    easing: 'linear'
-  
-   }); 
-  }
-  slider();
-
 
 
   $(".top_nav, .hiden_sub_box").on("mouseenter", function(){
@@ -66,6 +45,7 @@ const slider = function(){
   });
 
 
+
   $(".top_nav li").on("mouseenter", function(){
     const i = $(this).index();
   
@@ -75,7 +55,7 @@ const slider = function(){
 
 
 
-
+// 더보기 버튼 클릭하면 3개씩 화면 더 볼수있음.
  const loadMore = function(){
   $(".product_box").hide();
   $(".product_box").slice(0, 3).show();
@@ -84,13 +64,15 @@ const slider = function(){
   $(".load_more button").click(function(){
     $(".product_box:hidden").slice(0, 3).show();
     if ($(".product_box:hidden").length == 0) {
-      $(".load_more").html(`<a href="#">Full View</a>`);
+      $(".load_more").html(`<input type="hidden>`);
       
       
    }
   });
  }
  loadMore();
+
+
 
 
 

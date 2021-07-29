@@ -1,42 +1,48 @@
     <!-- Footer_info Section Code -->
     <section class="footer_info">
-      <div class="footer_main">
-        <div class="footer_cover">
-          <div class="footer_sub_box">
-            <div class="footer_item">
-              <img src="/renewal-novella/img/footer1.png" alt=""> 
-            </div>
-            <div class="footer_txt">
-              <p><span>Free shipping over €150</span></p>
-              <p>We are pleased to offer free economyshipping to</p>
-              <p>all orders of €150 or more.</p>
-              <p>Read through all the details by clicking <a href="#">here</a></p>	
-            </div>
+      <div class="footer_cover">
+        <div class="footer_sub_box">
+          <div class="footer_item">
+            <img src="/renewal-novella/img/footer1.png" alt=""> 
           </div>
-          <div class="footer_sub_box">
-            <div class="footer_item">
-              <img src="/renewal-novella/img/footer2.png" alt="">
-            </div>
-            <div class="footer_txt">
-              <p><span>When will we ship your order?</span></p><br>
-              <p>Orders take approximately<b> 24 to 48 </b>business</p>
-              <p>hours to complete and are processed Monday to<br>Friday.</p>
-            </div>
-          </div>
-          <div class="footer_sub_box">
-            <div class="footer_item">
-              <img src="/renewal-novella/img/footer3.png" alt="">
-            </div>
-            <div class="footer_txt">
-              <p><span>Do you need any help?</span></p><br>
-              <p>Our advisors are ready to assist you by phone on</p>
-              <p> <b>+39 055 5324343</b> or by email</p>
-              <p> at <b>customers@eu.smnovella.com</b> from Monday to</br>
-              Friday<b> 9AM-8PM</b> GMT +1.</p>
-            </div>
+          <div class="footer_txt">
+            <p><span>Free shipping over €150</span></p>
+            <p>We are pleased to offer free economyshipping to</p>
+            <p>all orders of €150 or more.</p>
+            <p>Read through all the details by clicking <a href="#">here</a></p>	
           </div>
         </div>
-    </div>
+      </div>
+      <!-- End of footer_cover  -->
+      <div class="footer_cover">
+        <div class="footer_sub_box"> 
+          <div class="footer_item">
+            <img src="/renewal-novella/img/footer2.png" alt="">
+          </div>
+          <div class="footer_txt">
+            <p><span>When will we ship your order?</span></p><br>
+            <p>Orders take approximately<b> 24 to 48 </b>business</p>
+            <p>hours to complete and are processed Monday to<br>Friday.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of footer_cover  -->
+      <div class="footer_cover">
+        <div class="footer_sub_box">
+          <div class="footer_item">
+            <img src="/renewal-novella/img/footer3.png" alt="">
+          </div>
+          <div class="footer_txt">
+            <p><span>Do you need any help?</span></p><br>
+            <p>Our advisors are ready to assist you by phone on</p>
+            <p> <b>+39 055 5324343</b> or by email</p>
+            <p> at <b>customers@eu.smnovella.com</b> from Monday to</br>
+            Friday<b> 9AM-8PM</b> GMT +1.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of footer_cover  -->
+    
   </section>
   <!-- End of Footer_info Section Code -->
 

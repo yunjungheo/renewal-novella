@@ -12,16 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
@@ -29,6 +20,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <!-- Style Frameworks -->
+
+  <!-- Light Slider Plugin Link -->
+  <link rel="stylesheet" href="/renewal-novella/lib/lightslider.css">
   <!-- Custom Styles -->
   <link rel="icon" type="image/png" sizes="16x16" href="/renewal-novella/img/logofavicon.ico/favicon-32x32.png">
   <!-- reset CSS Code -->
@@ -60,7 +54,7 @@
               <button type="button" id="login_btn">LOGIN</button>
               <p class="form_acount">
                 Don't have an account? 
-                <a href="/renewal-novella/pages/join_form.php">Create one</a>
+                <a href="/renewal-novella/pages/join/join_form.php">Create one</a>
               </p>
            </form>
         </div>
@@ -95,6 +89,11 @@
   
   <!-- JQuery Framework Load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Light Slider -->
+  <script src="/renewal-novella/lib/lightslider.js"></script>
+  <!-- Slider JS -->
+  <script src="/renewal-novella/js/slider.js"></script>
+  <!-- Main Slider JS -->
   <script src="/renewal-novella/js/jq.main.js"></script>
-</body>
+  </body>
 </html>

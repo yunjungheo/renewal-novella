@@ -19,7 +19,7 @@
       <div class="icon_cover">
         <div class="first_icons">
           <div class="icon_search">
-            <a href="/renewal-novella/pages/product_insert_form.php"><i class="far fa-search"></i><span>Search</span></a>
+            <a href=""><i class="far fa-search"></i><span>Search</span></a>
           </div>
           <div class="icon_place">
             <a href="/renewal-novella/pages/store_location_form.php"><i class="fas fa-map-marker-alt"></i><span>Boutiques</span></a>
@@ -37,13 +37,13 @@
             if(!$userid){
           ?>
           <!-- 로그아웃 시 보여질 UI -->
-          <a href="/renewal-novella/pages/login_form.php"><i class="far fa-user"></i><span> Log in</span></a>
+          <a href="/renewal-novella/pages/join/login_form.php"><i class="far fa-user"></i><span> Log in</span></a>
           <?php
             } else{
           ?>             
           <!-- 로그인 시 보여질 UI -->
-          <a href="#"><i class="far fa-user"></i> Hi! <?=$userid?></a> |
-          <a href="/renewal-novella/php/logout.php"> Log out</a>
+          <a href="#"><i class="far fa-user-check"></i> Hi! <?=$userid?></a>  |
+          <a href="/renewal-novella/php/logout.php"> <span class="log_out">Log out</span></a>
           
 
           <?php
@@ -59,7 +59,7 @@
           <li><a href="">Skincare</a> </li>
           <li><a href="">Bodycare</a></li>
           <li><a href="">At Home</a></li>
-          <li><a href="">Firenze 1221</a></li>
+          <li><a href="/renewal-novella/pages/product/product_insert_form.php">Firenze 1221</a></li>
        </ul>
        <div class="hiden_sub_box">
         <ul class="subnav_box box1">

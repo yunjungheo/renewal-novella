@@ -11,16 +11,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
@@ -39,6 +30,7 @@
   <link rel="stylesheet" href="/renewal-novella/css/style.css">
   <!-- Media CSS Code -->
   <link rel="stylesheet" href="/renewal-novella/css/media.css">
+
 </head>
 <body>
   <div class="wrapper">
@@ -53,8 +45,9 @@
         <div class="center slider_wrap">
           <div class="slider_video">
             <video autoplay muted loop>
-              <source width="700px" height="450px" src="/renewal-novella/img/main-media1.mp4">
+              <source  src="/renewal-novella/img/main-media1.mp4">
             </video>
+            
           </div>
         </div> 
       </div>
@@ -64,7 +57,7 @@
         <div class="center slider_wrap">
           <div class="slider_video">  
             <video autoplay muted loop>
-              <source width="700px" height="450px" src="/renewal-novella/img/main-media2.mp4">
+              <source src="/renewal-novella/img/main-media2.mp4">
             </video>
           </div>
         </div> 
@@ -75,7 +68,7 @@
         <div class="center slider_wrap">
           <div class="slider_video">
             <video autoplay muted loop>
-              <source width="700px" height="450px" src="/renewal-novella/img/main-media3.mp4">
+              <source src="/renewal-novella/img/main-media3.mp4">
             </video>
           </div>
         </div> 
@@ -137,20 +130,20 @@
           ?> 
           <!-- Loop Product Box-->
           <div class="product_box">
-            <div class="product_img">
-              <a href="/renewal-novella/pages/pro_detail_form.php"><img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt=""></a>
-            </div>
-            <div class="product_tit">
-              <p><?=$pro_row_tit?></p>
-            </div>
-            <div class="product_pri">
-             <p>&#8364 <?=$pro_row_pri?></p>
-            </div>
-            <div class="product_button">
-              <button>ADD TO CART</button>
-            </div>
-          </div>
-           
+              <div class="product_img">
+                <a href="/renewal-novella/pages/product/pro_detail_form.php?pro_idx=<?=$pro_row_idx?>">
+                <img src="/renewal-novella/data/product_imgs/<?=$pro_row_img?>" alt=""></a>
+              </div>
+              <div class="product_tit">
+                <p><?=$pro_row_tit?></p>
+              </div>
+              <div class="product_pri">
+              <p>&#8364 <?=$pro_row_pri?></p>
+              </div>
+              <div class="product_button">
+                <button>ADD TO CART</button>
+              </div>
+          </div> 
         <!-- End of Loop Product Box-->
          <?php } ?>
         </div>
@@ -164,14 +157,19 @@
 
   </div>
 
-    <?php include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/footer.php"; ?>
+    <?php include $_SERVER["DOCUMENT_ROOT"]."/renewal-novella/include/footer.php"; 
+
+     ?>
     
 
   <!-- JQuery Framework Load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Light Slider -->
   <script src="/renewal-novella/lib/lightslider.js"></script>
-
+  <!-- Slider JS -->
+  <script src="/renewal-novella/js/slider.js"></script>
+  <!-- Main Slider JS -->
   <script src="/renewal-novella/js/jq.main.js"></script>
+
 </body>
 </html>
