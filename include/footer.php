@@ -78,14 +78,14 @@
         <p>Let's Stay in Touch!</p>
       </div>
       <div class="com_text">
-        <p>Subscribe to our newsletter to get to know more about the<br> Officina Profumo-Farmaceutica di Santa Maria Novella news,<br> events and products.</p>
+        <p>Subscribe to our newsletter to get to know more about the Officina Profumo-Farmaceutica di Santa Maria Novella news,events and products.</p>
       <div class="com_email">
         <input type="text" placeholder="Enter Your Email Address">
         <button>SUBMIT</button>
       </div>
       <div class="com_checkbox">
         <input type="checkbox">
-        <p>I hereby consent to the processing of the personal data that I have provided and<br> declare my agreement with the privacy policy statements.</p>
+        <p>I hereby consent to the processing of the personal data that I have provided and declare my agreement with the privacy policy statements.</p>
       </div>
     </div>
   </div> 
@@ -94,7 +94,6 @@
   <div class="company_txt">
     <p>&copy;2021 Officina Profumo Farmaceutica di Santa Maria Novella S.p.A. | Sede legale: Via della Scala 16 - 50123 Firenze - Cod. Fisc. e IVA</p>
   </div>
-  
 </div>
 <!-- End of Footer Code -->
 
