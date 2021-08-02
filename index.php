@@ -166,6 +166,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Light Slider -->
   <script src="/renewal-novella/lib/lightslider.js"></script>
+  <!-- Light Slider -->
+  <script src="/renewal-novella/lib/footerlightslider.js"></script>
   <!-- Slider JS -->
   <script src="/renewal-novella/js/slider.js"></script>
   <!-- Main Slider JS -->

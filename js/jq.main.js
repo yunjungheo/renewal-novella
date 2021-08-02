@@ -31,28 +31,45 @@ headerStick();
 
 
 
-  $(".top_nav, .hiden_sub_box").on("mouseenter", function(){
-    $(".subnav_box").css({display:"block"});
-    $(".subnav_box").stop().animate({height:"135px"}, 300);
-  });
+  // $(".top_nav, .hiden_sub_box").on("mouseenter", function(){
+  //   $(".subnav_box").css({display:"block"});
+  //   $(".subnav_box").stop().animate({height:"135px"}, 300);
+  // });
 
-  $(".top_nav, .hiden_sub_box").on("mouseleave", function(){
-    $(".subnav_box").stop().animate({height:0}, 300, function(){ 
-     $(".subnav_box").css({display:"none"});
+  // $(".top_nav, .hiden_sub_box").on("mouseleave", function(){
+  //   $(".subnav_box").stop().animate({height:0}, 300, function(){ 
+  //    $(".subnav_box").css({display:"none"});
 
        
-    });
-  });
+  //   });
+  // });
 
 
 
-  $(".top_nav li").on("mouseenter", function(){
-    const i = $(this).index();
+  // $(".top_nav li").on("mouseenter", function(){
+  //   const i = $(this).index();
   
-    $(".subnav_box").hide();
-    $(".subnav_box").eq(i).show();
+  //   $(".subnav_box").hide();
+  //   $(".subnav_box").eq(i).show();
+  // });
+
+  $(".top_nav li:first-child").mouseenter(function(){
+    $(".hiden_sub_box .box1").stop(true,true).slideDown(300);
   });
 
+  $(".top_nav li:first-child").mouseleave(function(){
+    $(".hiden_sub_box .box1").stop(true,true).slideUp(300);
+  });
+
+  $(".top_nav li:nth-child(2)").mouseenter(function(){
+    $(".hiden_sub_box .box2").stop(true,true).slideDown(300);
+  });
+
+  $(".top_nav li:nth-child(2)").mouseleave(function(){
+    $(".hiden_sub_box .box2").stop(true,true).slideUp(300);
+  });
+
+  
 
 
 // 더보기 버튼 클릭하면 3개씩 화면 더 볼수있음.

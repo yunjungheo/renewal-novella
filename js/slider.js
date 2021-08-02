@@ -31,7 +31,7 @@ const slider = function(){
        //2.lightSlider안에 객체화 시켜서 넣어줘야해서 {}사용
     
       item: 1,
-      controls: true,
+     
    
       speed:1000,
       auto: true,
